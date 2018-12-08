@@ -80,7 +80,7 @@ def index():
                                      charset='utf8mb4',
                                      cursorclass=pymysql.cursors.DictCursor)
         with connection.cursor() as cursor:
-            sql = "SELECT `fyrirsogn`,`innihald` FROM `frett`"
+            sql = "SELECT * `fyrirsogn`,`innihald` FROM `frett`"
             cursor.execute(sql)
             result = cursor.fetchone()
             print(result)
