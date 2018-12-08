@@ -8,6 +8,6 @@
     % for x in frettir:
         % for key, value in x.items():
             <p>{{value}}</p>
-    <p>Frettir:  {{ user }} </p>
+    <p>Frettir:  {{ frettir }} </p>
   </body>
 </html>
