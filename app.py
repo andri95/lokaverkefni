@@ -2,9 +2,12 @@
 # -*- coding: utf-8 -*-
 
 from sys import argv
+
 import bottle
 from bottle import *
 import pymysql.cursors
+
+bottle.debug(True)
 
 connection = pymysql.connect(host='tsuts.tskoli.is',
                              user='0106952799',
@@ -27,5 +30,4 @@ def index():
 
     return template('index', user=result)
 
-run(Debug=True)
 run(host='0.0.0.0', port=argv[1])
