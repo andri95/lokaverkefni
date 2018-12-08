@@ -5,6 +5,6 @@
     <title>Forsíða</title>
   </head>
   <body>
-    <p>Notandi:  {{ notendanafn }} </p>
+    <p>Notandi:  {{ user }} </p>
   </body>
 </html>
