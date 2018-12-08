@@ -5,6 +5,9 @@
     <title>Forsíða</title>
   </head>
   <body>
-    <p>Notandi:  {{ user }} </p>
+    % for x in frettir:
+        % for key, value in x.items():
+            <p>{{value}}</p>
+    <p>Frettir:  {{ user }} </p>
   </body>
 </html>

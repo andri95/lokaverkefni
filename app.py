@@ -87,6 +87,6 @@ def index():
     finally:
         connection.close()
 
-    return template('index', user=result)
+    return template('index', frettir=result)
 
 run(host='0.0.0.0', port=argv[1])
