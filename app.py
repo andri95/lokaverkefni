@@ -7,9 +7,9 @@ import pymysql.cursors
 
 # Connect to the database
 connection = pymysql.connect(host='tsuts.tskoli.is',
-                             user='kt',
+                             user='0106952799',
                              password='mypassword',
-                             db='kt_db',
+                             db='0106952799_vef',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
 
