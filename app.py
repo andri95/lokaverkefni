@@ -5,7 +5,6 @@ from sys import argv
 from bottle import *
 import pymysql.cursors
 
-'''
 # Connect to the database
 connection = pymysql.connect(host='tsuts.tskoli.is',
                              user='0106952799',
@@ -51,7 +50,6 @@ try:
         connection.commit()
 finally:
     connection.close()
-'''
 
 @route('/')
 def index():
