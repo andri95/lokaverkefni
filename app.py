@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from sys import argv
+import bottle
 from bottle import *
 import pymysql.cursors
 
