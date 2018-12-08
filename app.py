@@ -12,7 +12,7 @@ connection = pymysql.connect(host='tsuts.tskoli.is',
                              charset='utf8mb4')
 try:
     with connection.cursor() as cursor:
-        cursor.execute('CREATE DATABASE 0106952799_frettavefur')
+        cursor.execute('CREATE DATABASE 0106952799_news')
 
 finally:
     connection.close()
@@ -20,7 +20,7 @@ finally:
 connection = pymysql.connect(host='tsuts.tskoli.is',
                              user='0106952799',
                              password='mypassword',
-                             db = '0106952799_frettavefur',
+                             db = '0106952799_news',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor
                              )
@@ -36,7 +36,7 @@ finally:
 connection = pymysql.connect(host='tsuts.tskoli.is',
                              user='0106952799',
                              password='mypassword',
-                             db = '0106952799_frettavefur',
+                             db = '0106952799_news',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor
                              )
@@ -56,7 +56,7 @@ def index():
     connection = pymysql.connect(host='tsuts.tskoli.is',
                                  user='0106952799',
                                  password='mypassword',
-                                 db='0106952799_frettavefur',
+                                 db='0106952799_news',
                                  charset='utf8mb4',
                                  cursorclass=pymysql.cursors.DictCursor
                                  )
