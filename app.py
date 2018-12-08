@@ -5,15 +5,16 @@ from sys import argv
 from bottle import *
 import pymysql.cursors
 
+connection = pymysql.connect(host='tsuts.tskoli.is',
+                             user='0106952799',
+                             password='mypassword',
+                             db='0106952799_frettavefur',
+                             charset='utf8mb4',
+                             cursorclass=pymysql.cursors.DictCursor)
+
 @get('/')
 def index():
-    connection = pymysql.connect(host='tsuts.tskoli.is',
-                                 user='0106952799',
-                                 password='mypassword',
-                                 db='0106952799_frettavefur',
-                                 charset='utf8mb4',
-                                 cursorclass=pymysql.cursors.DictCursor
-                                 )
+
     try:
         with connection.cursor() as cursor:
             sql = "SELECT `not_nafn`,`lykil` FROM `notandi`"
