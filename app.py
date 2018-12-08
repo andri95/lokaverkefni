@@ -19,8 +19,8 @@ def index():
     try:
         with connection.cursor() as cursor:
             # Read a single record
-            sql = "SELECT `id`,`email`,`password` FROM `users` WHERE `email`=%s"
-            cursor.execute(sql, ('gus@tskoli.is'))
+            sql = "SELECT `notendanafn`,`lykilord` FROM `innskraning` WHERE `stafsmannanumer`=%1"
+            cursor.execute(sql, ('111'))
             result = cursor.fetchone()
             print(result)
     finally:
