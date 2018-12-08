@@ -9,17 +9,16 @@ import pymysql.cursors
 
 bottle.debug(True)
 
-connection = pymysql.connect(host='tsuts.tskoli.is',
-                             user='0106952799',
-                             password='mypassword',
-                             db='0106952799_frettavefur',
-                             charset='utf8mb4',
-                             cursorclass=pymysql.cursors.DictCursor)
-
 @get('/')
 def index():
 
     try:
+        connection = pymysql.connect(host='tsuts.tskoli.is',
+                                     user='0106952799',
+                                     password='mypassword',
+                                     db='0106952799_frettavefur',
+                                     charset='utf8mb4',
+                                     cursorclass=pymysql.cursors.DictCursor)
         with connection.cursor() as cursor:
             sql = "SELECT `not_nafn`,`lykil` FROM `notandi`"
             cursor.execute(sql)
