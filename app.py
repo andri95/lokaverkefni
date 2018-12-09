@@ -186,7 +186,7 @@ def breyta_go():
         cursor.close()
         connection.close()
 
-    return bottle.template('innra')
+    bottle.redirect('/')
 
 
 
