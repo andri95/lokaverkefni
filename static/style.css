@@ -1,22 +1,25 @@
 body{
     background-color: darkgray;
     color: azure;
+    fomt-family: monospace;
     max-width: 60em;
     margin: 0 auto;
-    fomt-family: monospace;
     text-align: center;
 }
 img{
     width: 100%;
     height: 100%;
 }
+a{
+    font-family: monospace;
+    text-decoration: none;
+}
 h2{
-    fomt-family: monospace;
+    font-weight: lighter;
 }
 h3{
-    fomt-family: monospace;
+    font-weight: lighter;
 }
 p{
-    fomt-family: monospace;
     font-weight: bold;
 }
