@@ -7,7 +7,7 @@
   <body>
       <div>
           <h1>Aðgerðir</h1>
-          <form action="/adgerd" method="post">
+          <form action="/innri" method="post">
               <input type="checkbox" id="breyta" name="adgerdir" value="breyta">
               <label for="breyta">BREYTA FRÉTT</label>
               <input type="checkbox" id="eyda" name="adgerdir" value="eyda">
