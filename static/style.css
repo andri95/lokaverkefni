@@ -4,14 +4,19 @@ body{
     max-width: 60em;
     margin: 0 auto;
     fomt-family: monospace;
+    text-align: center;
 }
 img{
     width: 100%;
     height: 100%;
 }
-div{
-    tezt-align: center;
+h2{
+    fomt-family: monospace;
+}
+h3{
+    fomt-family: monospace;
 }
 p{
     fomt-family: monospace;
+    font-weight: bold;
 }
