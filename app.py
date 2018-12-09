@@ -168,6 +168,7 @@ def breyta_go():
     nyr_titill = str(nyr_titill)
     ny_frett = bottle.request.forms.get('ny_frett')
     ny_frett = str(ny_frett)
+    print(nr_frettar, ny_frett, nyr_titill)
 
     try:
         connection = pymysql.connect(host='tsuts.tskoli.is',
