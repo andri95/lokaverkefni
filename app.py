@@ -128,13 +128,13 @@ def adgerd():
 
 @bottle.post('/innra')
 def adgerd_go():
-    utkoma = bottle.request.forms.getall('adgerdir')
+    #utkoma = bottle.request.forms.getall('adgerdir')
 
-    if utkoma == 'breyta':
+    if bottle.request.forms.get('breyta'):
         bottle.redirect('/breyta')
-    elif utkoma == 'eyda':
+    elif bottle.request.forms.get('eyda'):
         bottle.redirect('/eyda')
-    elif utkoma == 'baeta':
+    elif bottle.request.forms.get('baeta'):
         bottle.redirect('/ny')
     else:
         bottle.redirect('/innra')
