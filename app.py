@@ -175,7 +175,7 @@ def breyta_go():
                                      cursorclass=pymysql.cursors.DictCursor)
 
         with connection.cursor() as cursor:
-            sql = "UPDATE `frettir` SET `fyrirsogn` =%s, `innihald` =%s WHERE `nr_frettar`=%s"
+            sql = "UPDATE `frett` SET `fyrirsogn` =%s, `innihald` =%s WHERE `nr_frettar`=%s"
             cursor.execute(sql, (nyr_titill, ny_frett, nr_frettar))
             connection.commit()
             result = cursor.fetchone()
@@ -184,7 +184,7 @@ def breyta_go():
     finally:
         cursor.close()
         connection.close()
-        bottle.redirect('/')
+        bottle.redirect('/innri')
 
 
 
