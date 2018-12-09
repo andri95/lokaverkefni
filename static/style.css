@@ -5,6 +5,12 @@ body{
     margin: 0 auto;
 }
 img{
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    height: 90%;
+}
+div{
+    tezt-align: center;
+}
+p{
+    fomt-family: monospace;
 }
