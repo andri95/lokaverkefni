@@ -186,7 +186,7 @@ def breyta_go():
         cursor.close()
         connection.close()
 
-    bottle.redirect('/')
+    bottle.redirect('/', notendanafn = 'admin', lykilord = 'admin')
 
 
 
