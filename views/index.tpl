@@ -5,8 +5,14 @@
     <title>Forsíða</title>
   </head>
   <body>
-    % for x in frettir:
-        % for key, value in x.items():
-            <p>{{value}}</p>
+      <div>
+        % for x in frettir:
+            % for key, value in x.items():
+                <p>{{value}}</p>
+        % end
+      </div>
+      <div>
+        <a href="/login">Innskráning</a>
+      </div>
   </body>
 </html>

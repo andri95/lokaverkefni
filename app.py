@@ -89,4 +89,37 @@ def index():
 
     return template('index', frettir=result)
 
+@bottle.get('/login') # or @route('/login')
+def login():
+    return bottle.template('innskraning')
+
+@bottle.post('/login')
+def do_login():
+    notendanafn = bottle.request.forms.get('notendanafn')
+    lykilord = bottle.request.forms.get('lykilord')
+
+    try:
+        connection = pymysql.connect(host='tsuts.tskoli.is',
+                                     user='0106952799',
+                                     password='mypassword',
+                                     db='0106952799_veflokav',
+                                     charset='utf8mb4',
+                                     cursorclass=pymysql.cursors.DictCursor)
+
+        with connection.cursor() as cursor:
+            # Read a single record
+            sql = "SELECT `not_nafn`, `lykil` FROM `notandi` WHERE `not_nafn`=%s AND `lykil`=%s"
+            cursor.execute(sql, (notendanafn, lykilord))
+            result = cursor.fetchone()
+            print(result)
+
+    finally:
+        cursor.close()
+        connection.close()
+
+    if result is None:
+        return "Notandi er ekki til."
+    else:
+        bottle.redirect('/innra')
+
 run(host='0.0.0.0', port=argv[1])
