@@ -6,7 +6,9 @@
     <title>Forsíða</title>
   </head>
   <body>
-      <h1>Stuttfréttir</h1>
+      <div>
+         <img src="/static/stundin.svg" alt="Bottle">
+      </div>
       <div>
         % for x in frettir:
             % for key, value in x.items():
