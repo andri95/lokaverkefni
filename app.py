@@ -184,7 +184,7 @@ def breyta_go():
     finally:
         cursor.close()
         connection.close()
-        bottle.redirect('/index')
+        bottle.redirect('/')
 
 
 
