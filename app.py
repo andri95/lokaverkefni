@@ -181,13 +181,12 @@ def breyta_go():
             sql2 = "UPDATE `frett` SET `innihald` =%s  WHERE `nr_frettar`=%s"
             cursor.execute(sql, (ny_frett, nr_frettar))
             connection.commit()
-            result = cursor.fetchone()
-            print(result)
 
     finally:
+        cursor.close()
         connection.close()
 
-    return bottle.template('index')
+    return bottle.template('innra')
 
 
 
