@@ -182,9 +182,9 @@ def breyta_go():
             print(result)
 
     finally:
-        cursor.close()
         connection.close()
-        bottle.redirect('/')
+        
+    bottle.redirect('/')
 
 
 
