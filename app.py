@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
+
 from sys import argv
 
 import bottle
@@ -162,13 +165,10 @@ def breyta():
 
 @bottle.post('/breyta')
 def breyta_go():
-    listi = []
     nr_frettar = bottle.request.forms.get('nr_frettar')
-    listi.append(nr_frettar)
     ny_frett = bottle.request.forms.get('ny_frett')
-    listi.append(ny_frett)
     nyr_titill = bottle.request.forms.get('nyr_titill')
-    listi.append(nyr_titill)
+    nr_frettar.decode()
 
 
     try:
