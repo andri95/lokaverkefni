@@ -146,7 +146,7 @@ def breyta():
 @bottle.post('/breyta')
 def breyta_go():
     nr_frettar = bottle.request.forms.get('numer_frettar')
-    
+
 
 
 run(host='0.0.0.0', port=argv[1])

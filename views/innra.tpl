@@ -14,6 +14,7 @@
               <label for="eyda">EYÐA FRÉTT</label>
               <input type="checkbox" id="baeta" name="adgerdir" value="baeta">
               <label for="baeta">NÝ FRÉTT</label>
+              <input value="Staðfesta" type="submit" />
           </form>
       </div>
   </body>
