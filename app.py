@@ -165,7 +165,7 @@ def breyta_go():
     nr_frettar = bottle.request.forms.get('nr_frettar')
     nyr_titill = bottle.request.forms.get('nyr_titill')
     ny_frett = bottle.request.forms.get('ny_frett')
-    
+
     try:
         connection = pymysql.connect(host='tsuts.tskoli.is',
                                      user='0106952799',
@@ -176,7 +176,8 @@ def breyta_go():
 
         with connection.cursor() as cursor:
             sql = "UPDATE `frett` SET `fyrirsogn` = %s, `innihald` = %s  WHERE `nr_frettar`=%s"
-            cursor.execute(sql, (nr_frettar, ny_frett, nyr_titill))
+            val = (nr_frettar, ny_frett, nyr_titill)
+            cursor.execute(sql, val)
             connection.commit()
 
     finally:
