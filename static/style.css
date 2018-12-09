@@ -13,7 +13,7 @@ img{
 a{
     font-family: monospace;
     text-decoration: none;
-    list-style-type: none;
+    padding-right: 20px;
 }
 h2{
     font-weight: lighter;
