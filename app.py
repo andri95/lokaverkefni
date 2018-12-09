@@ -162,7 +162,7 @@ def breyta():
 
 @bottle.post('/breyta')
 def breyta_go():
-    nr_frettar = bottle.request.forms.get('numer_frettar')
+    nr_frettar = bottle.request.forms.get('nr_frettar')
     nyr_titill = bottle.request.forms.get('nyr_titill')
     ny_frett = bottle.request.forms.get('ny_frett')
 
