@@ -180,7 +180,7 @@ def breyta_go():
                                      cursorclass=pymysql.cursors.DictCursor)
 
         with connection.cursor() as cursor:
-            sql = "ALTER TABLE `frett` SET `fyrirsogn` = %s WHERE `nr_frettar`=%s"
+            sql = "UPDATE `frett` SET `fyrirsogn` = %s WHERE `nr_frettar`=%s"
             cursor.execute(sql, (nyr_titill, nr_frettar))
             connection.commit()
 
