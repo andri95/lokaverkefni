@@ -290,7 +290,7 @@ def buatil_go():
 def send_css(filename):
     return static_file(filename, root='static')
 
-@route('/static/<filename:re:.*\jpg>')
+@route('/static/<filename:re:.*\.jpg>')
 def send_image(filename):
     return static_file(filename, root='static')
 
