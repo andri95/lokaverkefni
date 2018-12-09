@@ -9,13 +9,13 @@
       <div>
          <img src="/static/Stundin_logo.jpg" alt="Bottle">
       </div>
-      <div>
+      <fieldset>
         % for x in frettir:
             % for key, value in x.items():
                 <p>{{value}}</p>
             % end
         % end
-      </div>
+      </fieldset>
       <div>
         <ul>
            <a href="/login">Innskráning</a>
