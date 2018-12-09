@@ -182,7 +182,7 @@ def breyta_go():
         with connection.cursor() as cursor:
             sql = "UPDATE `frett` SET `fyrirsogn` = %s, `innihald` = %s  WHERE `nr_frettar`=%s"
             gildi = (nr_frettar, (ny_frett, nyr_titill))
-            cursor.execute(sql, gildi)
+            cursor.execute(sql, (gildi))
             connection.commit()
 
     finally:
