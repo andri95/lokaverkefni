@@ -118,7 +118,7 @@ def do_login():
         connection.close()
 
     if result is None:
-        bottle.redirect('/')
+        return "Innskráning mistókst!"
     else:
         bottle.redirect('/innra')
 
