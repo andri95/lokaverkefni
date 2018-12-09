@@ -128,7 +128,7 @@ def adgerd():
 
 @bottle.post('/innra')
 def adgerd_go():
-    utkoma = bottle.request.forms.get('adgerdir')
+    utkoma = bottle.request.forms.getall('adgerdir')
 
     if utkoma == 'breyta':
         bottle.redirect('/breyta')
