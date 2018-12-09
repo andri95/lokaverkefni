@@ -8,11 +8,11 @@
       <div>
           <h1>Aðgerðir</h1>
           <form action="/innra" method="post">
-              <input type="checkbox" id="breyta" name="adgerdir" value="breyta">
+              <input type="checkbox" id="breyta" name="breyta" value="breyta">
               <label for="breyta">BREYTA FRÉTT</label>
-              <input type="checkbox" id="eyda" name="adgerdir" value="eyda">
+              <input type="checkbox" id="eyda" name="eyda" value="eyda">
               <label for="eyda">EYÐA FRÉTT</label>
-              <input type="checkbox" id="baeta" name="adgerdir" value="baeta">
+              <input type="checkbox" id="baeta" name="baeta" value="baeta">
               <label for="baeta">NÝ FRÉTT</label>
               <input value="Staðfesta" type="submit" />
           </form>
