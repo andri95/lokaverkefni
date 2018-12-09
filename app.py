@@ -72,13 +72,6 @@ finally:
 
 bottle.debug(True)
 
-@route('/static/<filename:re:.*\.css>')
-def send_css(filename):
-    return static_file(filename, root='static')
-
-@route('/static/<filename:re:.*\jpg>')
-def send_image(filename):
-    return static_file(filename, root='static')
 
 @get('/')
 def index():
@@ -293,6 +286,13 @@ def buatil_go():
 
     bottle.redirect('/')
 
+@route('/static/<filename:re:.*\.css>')
+def send_css(filename):
+    return static_file(filename, root='static')
+
+@route('/static/<filename:re:.*\jpg>')
+def send_image(filename):
+    return static_file(filename, root='static')
 
 
 
