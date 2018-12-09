@@ -7,7 +7,7 @@
   </head>
   <body>
       <div>
-         <img src="/static/stundin.svg" alt="Bottle">
+         <img src="/static/stundin_logo.jpg" alt="Bottle">
       </div>
       <div>
         % for x in frettir:
