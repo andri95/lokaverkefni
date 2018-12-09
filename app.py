@@ -166,11 +166,11 @@ def breyta_go():
     nyr_titill = bottle.request.forms.get('nyr_titill')
     ny_frett = bottle.request.forms.get('ny_frett')
     if bottle.request.forms.get('nr_frettar'):
-        return "vrkar"
+        return "vrkar1"
     if bottle.request.forms.get('nyr_titill'):
-        return "vrkar"
+        return "vrkar2"
     if bottle.request.forms.get('ny_frett'):
-        return "vrkar"
+        return "vrkar3"
     try:
         connection = pymysql.connect(host='tsuts.tskoli.is',
                                      user='0106952799',
