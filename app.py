@@ -163,8 +163,11 @@ def breyta():
 @bottle.post('/breyta')
 def breyta_go():
     nr_frettar = bottle.request.forms.get('nr_frettar')
+    nr_frettar = str(nr_frettar)
     nyr_titill = bottle.request.forms.get('nyr_titill')
+    nyr_titill = str(nyr_titill)
     ny_frett = bottle.request.forms.get('ny_frett')
+    ny_frett = str(ny_frett)
 
     try:
         connection = pymysql.connect(host='tsuts.tskoli.is',
