@@ -6,7 +6,7 @@
   </head>
   <body>
       <div>
-          % for x in results:
+          % for x in result:
               % for key, value in x.items():
                   <p>{{value}}</p>
                % end
