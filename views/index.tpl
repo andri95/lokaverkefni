@@ -21,5 +21,6 @@
            <a href="/login">Innskráning</a>
         </ul>
       </div>
+      % include('footer.tpl')
   </body>
 </html>

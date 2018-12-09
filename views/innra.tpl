@@ -7,7 +7,8 @@
   </head>
   <body>
       <div>
-          <h1>Aðgerðir</h1>
+          <h2>ADMIN SÍÐA</h2>
+          <h3>Aðgerðir</h3>
           <form action="/innra" method="post">
               <input type="checkbox" id="breyta" name="breyta" value="breyta">
               <label for="breyta">BREYTA FRÉTT</label>
@@ -18,5 +19,6 @@
               <input value="Staðfesta" type="submit" />
           </form>
       </div>
+      % include('footer.tpl')
   </body>
 </html>
