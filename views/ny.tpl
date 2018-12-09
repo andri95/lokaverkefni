@@ -14,7 +14,7 @@
       </div>
       <div>
           <h1>Fylltu út í alla reiti</h1>
-          <form action="/breyta" method="post">
+          <form action="/ny" method="post">
             Númer fréttar (3 tölustafir): <input name="nr_frettar" type="text" /><br>
             Ný fyrirsögn: <input name="nyr_titill" type="text" /><br>
             Nýr texti: <input name="ny_frett" type="text" />

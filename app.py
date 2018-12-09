@@ -259,7 +259,7 @@ def buatil():
     return bottle.template('ny', result=result)
 
 
-@bottle.post('/eyda')
+@bottle.post('/ny')
 def buatil_go():
     nr_frettar = bottle.request.forms.get('nr_frettar')
     ny_frett = bottle.request.forms.get('ny_frett')

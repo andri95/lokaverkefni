@@ -14,7 +14,7 @@
       </div>
       <div>
           <h1>Sláðu inn númer fréttar til að eyða</h1>
-          <form action="/breyta" method="post">
+          <form action="/eyda" method="post">
             Númer fréttar: <input name="nr_frettar" type="text" /><br>
             <input value="Staðfesta" type="submit" />
           </form>
