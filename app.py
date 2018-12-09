@@ -274,7 +274,7 @@ def buatil_go():
                                      cursorclass=pymysql.cursors.DictCursor)
 
         with connection.cursor() as cursor:
-            sql = "INSERT INTO `frett`(`starfsm_numer`, `nr_frettar`, `fyrirsogn`, `innihald`) VALUES('101', %s, %s, %s)"
+            sql = "INSERT INTO `frett` VALUES('101', %s, %s, %s)"
             cursor.execute(sql, (nr_frettar, nyr_titill, ny_frett))
             connection.commit()
 

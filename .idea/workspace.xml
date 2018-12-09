@@ -64,11 +64,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="761">
-                  <caret line="276" column="32" selection-start-line="276" selection-start-column="32" selection-end-line="276" selection-end-column="32" />
+                <state relative-caret-position="727">
+                  <caret line="276" column="38" selection-start-line="276" selection-start-column="38" selection-end-line="276" selection-end-column="38" />
                   <folding>
                     <element signature="e#0#20#0" expanded="true" />
-                    <marker date="1544373659852" expanded="true" signature="5151:5189" ph="..." />
+                    <marker date="1544373911552" expanded="true" signature="5151:5189" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -365,11 +365,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="276" column="32" selection-start-line="276" selection-start-column="32" selection-end-line="276" selection-end-column="32" />
+        <state relative-caret-position="727">
+          <caret line="276" column="38" selection-start-line="276" selection-start-column="38" selection-end-line="276" selection-end-column="38" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
-            <marker date="1544373659852" expanded="true" signature="5151:5189" ph="..." />
+            <marker date="1544373911552" expanded="true" signature="5151:5189" ph="..." />
           </folding>
         </state>
       </provider>
