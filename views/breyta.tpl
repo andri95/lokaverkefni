@@ -6,13 +6,19 @@
   </head>
   <body>
       <div>
-          <h1>Aðgerðir</h1>
-          <input type="checkbox" id="breyta" name="adgerdir" value="breyta">
-          <label for="breyta">BREYTA FRÉTT</label>
-          <input type="checkbox" id="eyda" name="adgerdir" value="eyda">
-          <label for="eyda">EYÐA FRÉTT</label>
-          <input type="checkbox" id="baeta" name="adgerdir" value="baeta">
-          <label for="baeta">NÝ FRÉTT</label>
+          % for x in results:
+              % for key, value in x.items():
+                  <p>{{value}}</p>
+               % end
+        % end
       </div>
+      <div>
+          <h1>Fylltu út alla reitina</h1>
+          <form action="/login" method="post">
+            Númer fréttar: <input name="nr_frettar" type="text" /><br>
+            Ný fyrirsögn: <input name="nyr_titill" type="text" /><br>
+            Nýr texti: <input name="ny_frett" type="text" />
+            <input value="Staðfesta" type="submit" />
+          </form>
   </body>
 </html>

@@ -141,11 +141,50 @@ def adgerd_go():
 
 @bottle.get('/breyta')
 def breyta():
-    return bottle.template('breyta')
+    try:
+        connection = pymysql.connect(host='tsuts.tskoli.is',
+                                     user='0106952799',
+                                     password='mypassword',
+                                     db='0106952799_veflokav',
+                                     charset='utf8mb4',
+                                     cursorclass=pymysql.cursors.DictCursor)
+
+        with connection.cursor() as cursor:
+            # Read a single record
+            sql = "SELECT `nr_frettar`, `fyrirsogn` FROM `frett`"
+            cursor.execute(sql)
+            result = cursor.fetchall()
+
+    finally:
+        cursor.close()
+        connection.close()
+    return bottle.template('breyta', result = result)
 
 @bottle.post('/breyta')
 def breyta_go():
     nr_frettar = bottle.request.forms.get('numer_frettar')
+    nyr_titill = bottle.request.forms.get('nyr_titill')
+    ny_frett = bottle.request.forms.get('ny_frett')
+
+    try:
+        connection = pymysql.connect(host='tsuts.tskoli.is',
+                                     user='0106952799',
+                                     password='mypassword',
+                                     db='0106952799_veflokav',
+                                     charset='utf8mb4',
+                                     cursorclass=pymysql.cursors.DictCursor)
+
+        with connection.cursor() as cursor:
+            sql = "UPDATE `frettir` SET `fyrirsogn` =%s, `innihald` =%s WHERE `nr_frettar`=%s"
+            cursor.execute(sql, (nyr_titill, ny_frett, nr_frettar))
+            connection.commit()
+            result = cursor.fetchone()
+            print(result)
+
+    finally:
+        cursor.close()
+        connection.close()
+        bottle.redirect('/index')
 
 
 
