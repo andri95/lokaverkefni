@@ -285,6 +285,10 @@ def buatil_go():
 
     bottle.redirect('/')
 
+@route('/static/<filename:re:.*\.css>')
+def send_css(filename):
+    return static_file(filename, root='static')
+
 
 
 run(host='0.0.0.0', port=argv[1])
