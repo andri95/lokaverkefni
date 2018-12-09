@@ -35,14 +35,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4410" />
+          <entry key="py" value="4411" />
           <entry key="tpl" value="881" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="881" />
-          <entry key="Python" value="4409" />
+          <entry key="Python" value="4410" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
@@ -64,11 +64,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="835">
-                  <caret line="182" column="100" selection-start-line="182" selection-start-column="100" selection-end-line="182" selection-end-column="100" />
+                <state relative-caret-position="852">
+                  <caret line="183" column="44" selection-start-line="183" selection-start-column="44" selection-end-line="183" selection-end-column="44" />
                   <folding>
                     <element signature="e#0#20#0" expanded="true" />
-                    <marker date="1544333341847" expanded="true" signature="5105:5143" ph="..." />
+                    <marker date="1544333681358" expanded="true" signature="5105:5143" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -347,11 +347,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="182" column="100" selection-start-line="182" selection-start-column="100" selection-end-line="182" selection-end-column="100" />
+        <state relative-caret-position="852">
+          <caret line="183" column="44" selection-start-line="183" selection-start-column="44" selection-end-line="183" selection-end-column="44" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
-            <marker date="1544333341847" expanded="true" signature="5105:5143" ph="..." />
+            <marker date="1544333681358" expanded="true" signature="5105:5143" ph="..." />
           </folding>
         </state>
       </provider>
