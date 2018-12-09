@@ -168,7 +168,6 @@ def breyta_go():
     nr_frettar = bottle.request.forms.get('nr_frettar')
     ny_frett = bottle.request.forms.get('ny_frett')
     nyr_titill = bottle.request.forms.get('nyr_titill')
-    nr_frettar.decode()
 
 
     try:
