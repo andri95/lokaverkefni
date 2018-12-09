@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link type="text/css" href="/static/style.css" rel="stylesheet"/>
     <title>Breyta Frétt</title>
   </head>
   <body>
