@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="81636b91-7f5b-4b1e-baef-3bd2f108b2b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/breyta.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/breyta.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/eyda.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/eyda.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ny.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/ny.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,11 +64,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="778">
-                  <caret line="277" column="65" selection-start-line="277" selection-start-column="65" selection-end-line="277" selection-end-column="65" />
+                <state relative-caret-position="761">
+                  <caret line="276" column="32" selection-start-line="276" selection-start-column="32" selection-end-line="276" selection-end-column="32" />
                   <folding>
                     <element signature="e#0#20#0" expanded="true" />
-                    <marker date="1544373457723" expanded="true" signature="5151:5189" ph="..." />
+                    <marker date="1544373659852" expanded="true" signature="5151:5189" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -368,11 +365,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="277" column="65" selection-start-line="277" selection-start-column="65" selection-end-line="277" selection-end-column="65" />
+        <state relative-caret-position="761">
+          <caret line="276" column="32" selection-start-line="276" selection-start-column="32" selection-end-line="276" selection-end-column="32" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
-            <marker date="1544373457723" expanded="true" signature="5151:5189" ph="..." />
+            <marker date="1544373659852" expanded="true" signature="5151:5189" ph="..." />
           </folding>
         </state>
       </provider>
