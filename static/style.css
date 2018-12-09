@@ -4,3 +4,7 @@ body{
     max-width: 60em;
     margin: 0 auto;
 }
+img{
+    width: 70%;
+    height: 70%;
+}

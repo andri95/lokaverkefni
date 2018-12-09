@@ -76,6 +76,10 @@ bottle.debug(True)
 def send_css(filename):
     return static_file(filename, root='static')
 
+@route('/static/<filename:re:.*\jpg>')
+def send_image(filename):
+    return static_file(filename, root='static')
+
 @get('/')
 def index():
 
