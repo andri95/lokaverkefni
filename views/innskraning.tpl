@@ -10,7 +10,7 @@
           <form action="/login" method="post">
             Notendanafn: <input name="notendanafn" type="text" /><br>
             Lykilorð: <input name="lykilord" type="password" />
-            <input value="Login" type="submit" />
+            <input value="Innskrá" type="submit" />
           </form>
       </div>
   </body>

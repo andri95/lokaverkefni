@@ -122,4 +122,31 @@ def do_login():
     else:
         bottle.redirect('/innra')
 
+@bottle.get('/innra')
+def adgerd():
+    return bottle.template('innra')
+
+@bottle.post('/innra')
+def adgerd_go():
+    utkoma = bottle.request.forms.get('adgerdir')
+
+    if utkoma == 'breyta':
+        bottle.redirect('/breyta')
+    elif utkoma == 'eyda':
+        bottle.redirect('/eyda')
+    elif utkoma == 'baeta':
+        bottle.redirect('/ny')
+    else:
+        bottle.redirect('/innra')
+
+@bottle.get('/breyta')
+def breyta():
+    return bottle.template('breyta')
+
+@bottle.post('/breyta')
+def breyta_go():
+    nr_frettar = bottle.request.forms.get('numer_frettar')
+    
+
+
 run(host='0.0.0.0', port=argv[1])
