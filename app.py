@@ -192,6 +192,98 @@ def breyta_go():
 
     bottle.redirect('/')
 
+@bottle.get('/eyda')
+def eyda():
+    try:
+        connection = pymysql.connect(host='tsuts.tskoli.is',
+                                     user='0106952799',
+                                     password='mypassword',
+                                     db='0106952799_veflokav',
+                                     charset='utf8mb4',
+                                     cursorclass=pymysql.cursors.DictCursor)
+
+        with connection.cursor() as cursor:
+            # Read a single record
+            sql = "SELECT `nr_frettar`, `fyrirsogn` FROM `frett`"
+            cursor.execute(sql)
+            result = cursor.fetchall()
+
+    finally:
+        cursor.close()
+        connection.close()
+    return bottle.template('eyda', result = result)
+
+@bottle.post('/eyda')
+def eyda_go():
+    nr_frettar = bottle.request.forms.get('nr_frettar')
+
+    try:
+        connection = pymysql.connect(host='tsuts.tskoli.is',
+                                     user='0106952799',
+                                     password='mypassword',
+                                     db='0106952799_veflokav',
+                                     charset='utf8mb4',
+                                     cursorclass=pymysql.cursors.DictCursor)
+
+        with connection.cursor() as cursor:
+            sql = "DELETE FROM `frett` WHERE `nr_frettar`=%s"
+            cursor.execute(sql, (nr_frettar))
+            connection.commit()
+
+    finally:
+        cursor.close()
+        connection.close()
+
+    bottle.redirect('/')
+
+
+@bottle.get('/ny')
+def buatil():
+    try:
+        connection = pymysql.connect(host='tsuts.tskoli.is',
+                                     user='0106952799',
+                                     password='mypassword',
+                                     db='0106952799_veflokav',
+                                     charset='utf8mb4',
+                                     cursorclass=pymysql.cursors.DictCursor)
+
+        with connection.cursor() as cursor:
+            # Read a single record
+            sql = "SELECT `nr_frettar`, `fyrirsogn` FROM `frett`"
+            cursor.execute(sql)
+            result = cursor.fetchall()
+
+    finally:
+        cursor.close()
+        connection.close()
+    return bottle.template('ny', result=result)
+
+
+@bottle.post('/eyda')
+def buatil_go():
+    nr_frettar = bottle.request.forms.get('nr_frettar')
+    ny_frett = bottle.request.forms.get('ny_frett')
+    nyr_titill = bottle.request.forms.get('nyr_titill')
+
+    try:
+        connection = pymysql.connect(host='tsuts.tskoli.is',
+                                     user='0106952799',
+                                     password='mypassword',
+                                     db='0106952799_veflokav',
+                                     charset='utf8mb4',
+                                     cursorclass=pymysql.cursors.DictCursor)
+
+        with connection.cursor() as cursor:
+            sql = "INSERT INTO frett(`starfsm_numer`, `nr_frettar`, `fyrirsogn`, `innihald`) VALUES('101', %s, %s, %s)"
+            cursor.execute(sql, (nr_frettar, nyr_titill, ny_frett))
+            connection.commit()
+
+    finally:
+        cursor.close()
+        connection.close()
+
+    bottle.redirect('/')
+
 
 
 run(host='0.0.0.0', port=argv[1])

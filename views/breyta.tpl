@@ -13,7 +13,7 @@
         % end
       </div>
       <div>
-          <h1>Fylltu út alla reitina</h1>
+          <h1>Fylltu út í alla reiti</h1>
           <form action="/breyta" method="post">
             Númer fréttar: <input name="nr_frettar" type="text" /><br>
             Ný fyrirsögn: <input name="nyr_titill" type="text" /><br>
