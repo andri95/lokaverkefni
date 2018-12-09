@@ -118,7 +118,7 @@ def do_login():
         connection.close()
 
     if result is None:
-        return "Notandi er ekki til."
+        bottle.redirect('/')
     else:
         bottle.redirect('/innra')
 
@@ -183,7 +183,7 @@ def breyta_go():
         cursor.close()
         connection.close()
 
-    bottle.redirect('/', notendanafn = 'admin', lykilord = 'admin')
+    bottle.redirect('/')
 
 
 
